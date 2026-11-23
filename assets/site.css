@@ -1,15 +1,6 @@
 /* Ameen legal and support pages.
    Palette follows ios-native/Ameen/Theme.swift in the app repo. */
 
-@font-face {
-  font-family: "Amiri Ameen";
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  /* Subset of Amiri Bold (SIL Open Font License 1.1) holding only the letters of آمين */
-  src: url("amiri-ameen.woff2") format("woff2");
-}
-
 :root {
   color-scheme: light dark;
   --bg: #f7f1e8;
@@ -101,19 +92,18 @@ a:hover { text-decoration-thickness: 2px; }
 
 .brand {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 0.6rem;
   color: var(--ink);
   text-decoration: none;
   font-size: 1.0625rem;
   font-weight: 600;
 }
-.brand .ar {
-  font-family: "Amiri Ameen", "Geeza Pro", "Noto Naskh Arabic", serif;
-  font-weight: 700;
-  font-size: 1.6rem;
-  line-height: 1;
-  color: var(--accent);
+.brand .logo {
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  align-self: center;
 }
 
 .site-nav ul {
@@ -302,12 +292,12 @@ a:hover { text-decoration-thickness: 2px; }
   padding: 3rem 1rem 4rem;
 }
 .home .mark {
-  font-family: "Amiri Ameen", "Geeza Pro", "Noto Naskh Arabic", serif;
-  font-weight: 700;
-  font-size: clamp(6rem, 3rem + 16vw, 12rem);
-  line-height: 1.1;
-  color: var(--accent);
-  margin: 0;
+  display: block;
+  width: 128px;
+  height: 128px;
+  border-radius: 28px;
+  margin: 0 0 1.5rem;
+  box-shadow: 0 0 0 1px var(--line);
 }
 .home h1 {
   font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.375rem);

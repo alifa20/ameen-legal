@@ -12,4 +12,3 @@ Before publishing, every `<span class="todo">` placeholder must be replaced. Che
 
     grep -rn 'class="todo"' --include=*.html .
 
-`assets/amiri-ameen.woff2` is a subset of Amiri Bold (SIL Open Font License 1.1, https://github.com/aliftype/amiri).
